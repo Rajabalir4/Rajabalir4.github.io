@@ -1,0 +1,140 @@
+html,body,main{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.title{
+	text-align: center;
+	font-family: 'Orbitron', sans-serif;
+}
+.mail{
+	vertical-align: bottom;
+}
+.emailtxt a{
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	align-content: top;
+}
+.emailtxt a:hover{
+	text-decoration:underline;
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: inherit; 
+  border: 2px solid white;
+  color: white;
+  padding: 14px 42px;
+  text-align: center;
+  text-decoration: none;
+  font-size:16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color:gray;
+ 
+}
+
+.nav{
+	position: fixed;
+	box-sizing: border-box;
+	padding:50px;
+	top:0;
+	right: 0;
+	width: 30%;
+	background-image: linear-gradient(140deg, #4dabf5 45%, #2196f3 75%);
+	height: 100%;
+	color: white;
+
+}
+/*main area to display the content*/
+.area{
+	width: 70%;
+}
+
+.info{
+	box-sizing: border-box;
+	padding: 50px;
+	background-color: white;
+	font-size: 40px;
+}
+#home{
+	height: 100vh;
+}
+
+.pic_wrapper{
+display: block;
+margin-left: auto;
+ margin-right: auto;
+  background: linear-gradient(140deg, #4dabf5, #800080);
+  padding: 10px;
+  border-radius:50%;
+  width:250px;
+  height:250px;
+}
+
+.pic{
+	display: block;
+	width: inherit;
+	height:inherit;
+	border-radius: 50%;  	
+}
+/*details span*/
+.details{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	
+}
+/*navigation buttons*/
+ul{
+	list-style-type: none;
+	font-family: 'Roboto', sans-serif;
+	line-height: 35px;
+	margin-top: 50px;
+	text-align: center;
+}
+ul li a{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: white;
+	margin-left: -30px;
+	text-decoration: none;
+	opacity: 0.6;
+}
+ul li a:hover{
+	opacity: 0.9;		
+}
+#initial{
+	opacity: 1;
+}
+
+
+/* styling for social media icons*/
+.social-icons{
+	text-align: center;
+
+}
+.social-icons a{
+	text-decoration: none;
+	color: white;
+	font-size: 22px;
+}
+.fa {
+	text-align: center;
+	padding: 15px;
+	font-size: 30px;
+	border-radius: 50%;
+}
+
+.fa:hover {
+	opacity: 0.7;
+}
+

@@ -133,6 +133,7 @@ hr{
 }
 /*page widths*/
 #home,#education, #skills,#projects,#internships,#interests{
+	display:block;
 	height: 100vh;
 }
 
@@ -235,4 +236,36 @@ height: inherit;
   vertical-align: middle;
   line-height: normal;
   text-align:justify;
+}
+
+
+/*make it mobile friendly with media query*/
+@media only screen and (max-width:640px) {
+
+	#home,#education, #skills,#projects,#internships,#interests{
+	height: auto;
+	}
+	.nav{
+		height: auto;
+		width: 100%;
+	}
+	.area{
+		position: relative;
+		margin-top: 100%;
+		width: 100%;
+	}
+	.date{
+		float: none;
+	}
+	.date:before{
+		content: "\A";
+		display: block;
+	}
+	.nav ul{
+		display: none;
+}
+
+	
+
+
 }

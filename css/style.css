@@ -3,43 +3,47 @@ html,body,main{
 	width: 100%;
 	padding: 0;
 	margin:0;
+	font-family: 'Roboto', sans-serif;
 }
+
+/*navigation bar*/
 .title{
 	text-align: center;
 	font-family: 'Orbitron', sans-serif;
 }
-.mail{
-	vertical-align: bottom;
+.fa-envelope{
+	padding: 0;
+	margin-right: -10px;
 }
 .emailtxt a{
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
 	color: white;
-	align-content: top;
+	margin-left: -5px;
 }
 .emailtxt a:hover{
 	text-decoration:underline;
 }
 
 .button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: inherit; 
-  border: 2px solid white;
-  color: white;
-  padding: 14px 42px;
-  text-align: center;
-  text-decoration: none;
-  font-size:16px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: inherit; 
+	border: 2px solid white;
+	color: white;
+	padding: 14px 42px;
+	text-align: center;
+	text-decoration: none;
+	font-size:16px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
 }
 .button:hover {
-  background-color: white;
-  color:gray;
- 
+	background-color: white;
+	color:gray;
+
 }
 
 .nav{
@@ -54,54 +58,16 @@ html,body,main{
 	color: white;
 
 }
-/*main area to display the content*/
-.area{
-	width: 70%;
-}
 
-.info{
-	box-sizing: border-box;
-	padding: 50px;
-	background-color: white;
-	font-size: 40px;
-}
-#home{
-	height: 100vh;
-}
-
-.pic_wrapper{
-display: block;
-margin-left: auto;
- margin-right: auto;
-  background: linear-gradient(140deg, #4dabf5, #800080);
-  padding: 10px;
-  border-radius:50%;
-  width:250px;
-  height:250px;
-}
-
-.pic{
-	display: block;
-	width: inherit;
-	height:inherit;
-	border-radius: 50%;  	
-}
-/*details span*/
-.details{
-	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	text-align: center;
-	
-}
 /*navigation buttons*/
-ul{
+.nav ul{
 	list-style-type: none;
 	font-family: 'Roboto', sans-serif;
 	line-height: 35px;
 	margin-top: 50px;
 	text-align: center;
 }
-ul li a{
+.nav ul li a{
 	font-weight: bold;
 	font-size: 1.2em;
 	color: white;
@@ -109,13 +75,12 @@ ul li a{
 	text-decoration: none;
 	opacity: 0.6;
 }
-ul li a:hover{
+.nav ul li a:hover{
 	opacity: 0.9;		
 }
 #initial{
 	opacity: 1;
 }
-
 
 /* styling for social media icons*/
 .social-icons{
@@ -131,10 +96,143 @@ ul li a:hover{
 	text-align: center;
 	padding: 15px;
 	font-size: 30px;
-	border-radius: 50%;
 }
 
 .fa:hover {
 	opacity: 0.7;
 }
 
+
+
+
+
+/*main area to display the content*/
+.area{
+	width: 70%;
+}
+
+.info{
+	box-sizing: border-box;
+	padding: 4%;
+	background-color: white;
+}
+
+/*page heading for each page*/
+.pageheading{
+	font-family: 'Orbitron', sans-serif;
+	margin-top: 8%;
+	padding: 2%;
+	font-size: 1.2em;
+	background: -webkit-linear-gradient(250deg, #4dabf5, #800080);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+hr{
+	margin-top: -2%;
+
+}
+/*page widths*/
+#home,#education, #skills,#projects,#internships,#interests{
+	height: 100vh;
+}
+
+/*different heading*/
+.smallwrapper{
+   	padding:2%;
+   font-family: 'Roboto', sans-serif;
+}
+.midheading{
+	font-weight: bold;
+	font-size: 1.5em;
+	color:#343a40;
+}
+.tinyheading{
+	font-size: 1.2em;
+	color:#484848;
+	font-weight: bold;
+}
+.date{
+	color:#343a40;
+	float: right;
+	font-weight: none;
+}
+.major{
+	color:#606060;
+}
+
+/*first page*/
+.pic_wrapper{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(140deg, #4dabf5, #800080);
+	padding: 10px;
+	border-radius:50%;
+	width:250px;
+	height:250px;
+}
+
+.pic{
+	display: block;
+	width: inherit;
+	height:inherit;
+	border-radius: 50%;  	
+}
+/*details span*/
+.details{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	
+}
+
+
+
+
+/*bubbles for skills*/
+.speech-bubble {
+	position: relative;
+	display:inline-block;
+	background: #62008c;
+	border-radius: .4em;
+	padding: 8px 12px 8px 12px;
+	color:white;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.speech-bubble:hover{
+	background:#4dabf5;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-top-color: #62008c;
+	border-bottom: 0;
+	margin-left: -3px;
+	margin-bottom: -3px;
+}
+
+#internships ul{
+	padding-top:0;
+	list-style-type: none;
+	margin-left:-6%;
+}
+
+.interest_wrapper{
+height: inherit;
+  line-height: 40vh;
+  text-align: center;
+}
+.interest_desc{
+	
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  text-align:justify;
+}

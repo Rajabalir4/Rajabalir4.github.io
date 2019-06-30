@@ -8,7 +8,19 @@ $(document).ready(function() {
 		$(this).css('opacity', '1');
 	});
 
+	$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	}  );
+	});
+
 });
+
+
 
 function updateGradient(){
 	if(angle>360){
@@ -22,5 +34,8 @@ function updateGradient(){
 	$('.pic_wrapper').css({
 		background: "linear-gradient("+angle+"deg, #2196f3  48%,#9932CC 77%)"
 	});
+	
+
+
 	
 }

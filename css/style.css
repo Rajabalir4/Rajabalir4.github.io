@@ -132,7 +132,7 @@ hr{
 
 }
 /*page widths*/
-#home,#education, #skills,#projects,#internships,#interests{
+#home,#education, #skills,#projects,#internships,#interests,#msgme{
 	display:block;
 	height: 100vh;
 }
@@ -237,12 +237,44 @@ height: inherit;
   line-height: normal;
   text-align:justify;
 }
+#mybutton{
+	color: #62008c;
+	border-color: #62008c;
+}
+#mybutton:hover{
+	opacity: 0.6;
+}
+
+form {
+	width: 80%;
+	margin: 0 auto;
+}
+input[type=email]{
+	display: block;
+	margin: auto;
+	width: 100%;
+    padding: 14px 20px;
+  	color: #62008c;
+  	font-size:1em;
+ 	border-color: #62008c;
+ 	border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #62008c;
+  border-radius: 5	px;
+  resize: none;
+}
 
 
 /*make it mobile friendly with media query*/
 @media only screen and (max-width:640px) {
 
-	#home,#education, #skills,#projects,#internships,#interests{
+	#home,#education, #skills,#projects,#internships,#interests,#msgme{
 	height: auto;
 	}
 	.nav{
@@ -268,4 +300,4 @@ height: inherit;
 	
 
 
-}
+

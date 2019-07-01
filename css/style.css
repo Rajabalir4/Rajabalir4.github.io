@@ -274,7 +274,7 @@ textarea {
 /*make it mobile friendly with media query*/
 @media only screen and (max-width:640px) {
 
-	#home,#education, #skills,#projects,#internships,#interests,#msgme{
+	#home,#education, #skills,#projects,#internships,#interests{
 	height: auto;
 	}
 	.nav{
@@ -295,6 +295,7 @@ textarea {
 	}
 	.nav ul{
 		display: none;
+	}
 }
 
 	

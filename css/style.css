@@ -45,7 +45,9 @@ html,body,main{
 	color:gray;
 
 }
-
+.nav a {
+	text-decoration: none;
+}
 .nav{
 	position: fixed;
 	box-sizing: border-box;
@@ -53,7 +55,7 @@ html,body,main{
 	top:0;
 	right: 0;
 	width: 30%;
-	background-image: linear-gradient(140deg, #4dabf5 45%, #2196f3 75%);
+	background-image: linear-gradient(340deg, #4dabf5 45%, #800080 75%);
 	height: 100%;
 	color: white;
 
@@ -132,9 +134,12 @@ hr{
 
 }
 /*page widths*/
-#home,#education, #skills,#projects,#internships,#interests,#msgme{
+#home,#education, #skills,#internships,#interests,#msgme{
 	display:block;
 	height: 100vh;
+}
+#projects{
+	width: 100%;
 }
 
 /*different heading*/
@@ -186,11 +191,64 @@ hr{
 	text-align: center;
 	
 }
+.small{
+	font-size: 1.3em;
+	color:#343a40;
+}
+.micro{
+	font-size: 1em;
+	color:#606060;
 
+}
+/*project page*/
+
+.border{
+	border: 0.5px solid #C0C0C0;
+	margin-left:2%;
+	margin-right:2%;
+	box-sizing: border-box;
+	font-size: 0.8em;
+	display: inline-block;
+	line-height: 17px;
+	width: 100%;
+	margin-bottom: 1%;
+}
+.giticon{
+	font-size: 3.5em;
+	width:70px;
+	display: inline-block;
+	border-right: 0.5px solid #C0C0C0;
+	color:white;
+	float: left;
+	background: linear-gradient(340deg, #4dabf5, #800080);
+	margin-right: 5px;
+	
+}
+.card{
+	width: calc(100%-70px);
+	padding: 1.3%;
+	height: 100%;
+	line-height: 17px;
+	vertical-align: middle;
+}
+.technologies{
+	display: none;
+}
 
 
 
 /*bubbles for skills*/
+.tiny-bubble{
+	position: relative;
+	display:inline-block;
+	background:linear-gradient(-95deg, #4dabf5, #800080 90%);
+	border-radius:.3em;
+	padding-top: .5%;
+	padding-bottom:.5%;
+	padding-left:2%;
+	padding-right:2%; 
+	color: white;
+}
 .speech-bubble {
 	position: relative;
 	display:inline-block;
@@ -201,6 +259,7 @@ hr{
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
+
 .speech-bubble:hover{
 	background:#4dabf5;
 }
@@ -219,12 +278,11 @@ hr{
 	margin-bottom: -3px;
 }
 
-#internships ul{
+#internships ul, #interests ul{
 	padding-top:0;
 	list-style-type: none;
 	margin-left:-6%;
 }
-
 .interest_wrapper{
 height: inherit;
   line-height: 40vh;
@@ -238,11 +296,12 @@ height: inherit;
   text-align:justify;
 }
 #mybutton{
-	color: #62008c;
-	border-color: #62008c;
+	color: white;
+	background: linear-gradient(340deg, #4dabf5, #800080);
+	border-radius: 5px;
 }
 #mybutton:hover{
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 form {
@@ -254,7 +313,6 @@ input[type=email]{
 	margin: auto;
 	width: 100%;
     padding: 14px 20px;
-  	color: #62008c;
   	font-size:1em;
  	border-color: #62008c;
  	border-radius: 5px;
@@ -266,7 +324,7 @@ textarea {
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #62008c;
-  border-radius: 5	px;
+  border-radius: 5px;
   resize: none;
 }
 
@@ -296,6 +354,16 @@ textarea {
 	.nav ul{
 		display: none;
 	}
+	.giticon{
+		width: 22%;
+		height: 100%;
+		 word-wrap: break-word;
+	}
+	.card{
+		line-height: 14fulpx;
+	}
+	
+
 }
 
 	

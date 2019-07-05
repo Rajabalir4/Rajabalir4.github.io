@@ -1,6 +1,7 @@
 var angle = 340;
 $(document).ready(function() {
-	
+	var tocken = "apolo911"
+
 	$(".sent").hide();
 
 	setInterval(updateGradient,100);
@@ -27,23 +28,26 @@ $(document).ready(function() {
 
 	});
 
-
-	//function to send notification to me
+	var decrypted = CryptoJS.AES.decrypt("U2FsdGVkX1/M1pFp0+RFXYB8nGcnJ4R8QgkITgKuV5JiZGKOgA9t8FvA2hCSMwDex3/HQCCTsGgMtXtSjZSoxCS4tYeq1xdxsF24PtnogHR+jv0xrdkb5DXiJjue13EXvE80axYwPwHk5LiCCwrR6XmRhmrijaEcEX+uM/rbuvc=",tocken);
+	var url= decrypted.toString(CryptoJS.enc.Utf8);
+	
 	$('#mybutton').click(function(event){
 
 		$('form').submit(function(event){
 		event.preventDefault();
 		$('#mybutton').hide();
-		var botID = "838585674:AAHc-oeJjg5FjJXI9X6vMbJS219rCtQgfRI";
 		var email = $("input[name='mail']").val()
 		var text = $("textarea").val();
 		var msg = "Rajab you have a Message from your website %0AEmail : "+email+" %0AMessage:  "+text;
-		// im gonna add my telegram url here
-		$.get("https://api.telegram.org/bot"+botID+"/sendMessage?chat_id=564221279&text="+msg+"", function(data, status){
-        console.log(status);
+		
+
+		$.get(url+""+msg, function(data, status){
+        
         $(".sent").show('slow/400/fast');
         $("form").hide('slow/400/fast');
 		});	
+
+
 		});
 	});
 
